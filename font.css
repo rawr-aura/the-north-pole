@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'Bilcasereg';
+    src: url('fonts/Bilcase-Regular.otf') format('opentype');
+}
+@font-face{
+    font-family: 'Christmas2';
+    src: url('fonts/Christmas\ Math\ -\ Demo.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Bilcasesha';
+    src: url('fonts/Bilcase-Shadow.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Nav';
+    src: url('fonts/Jackpot.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Christmasspi';
+    src: url('fonts/ChristmasSpiritPersonalUse.ttf') format('truetype');
+} 
+@font-face {
+    font-family: 'white';
+    src: url('fonts/WhiteDreamPERSONALUSEONLY-Regular.otf') format('opentype');
+} 
