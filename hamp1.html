@@ -8,79 +8,165 @@
     <style>
         body { 
             font-family: Arial, sans-serif;
-            align-items: center;
             text-align: center;
-            background-color:#8B0000;
-            color: #2e1a47;
+            background-color: #8B0000;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
         }
-        p{
-            color: #8B0000;
-            font-family:'white';
-            font-size: 20px;
-            font-weight: 900;
-            margin: -1px 0px 0px 110px;
-            width: 800px;
-        }
+
         .container { 
             width: 70%;
-            height: 500px;
-            margin:150px 150px 150px 200px;
+            height: 50%;
             padding: 20px;
             background: white;
             border-radius: 10px;
             box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
-            overflow:scroll;
-            position: relative;
         }
+
         h1 { 
+            letter-spacing: 2px;
             color: #b22222;
-            font-family: 'Pacifico', cursive;
+            font-family: 'Bilcasereg';
+            font-size: 30px;
         }
+
+        .middle {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+        }
+
         img { 
-            width: 300px;
+            width: 35%;
             border-radius: 10px;
-            margin-bottom: 0;
         }
+
+        pre {
+            font-family: fantasy;
+            font-size: 19px;
+            text-align: start;
+            margin: 0;
+        }
+
+        .message p {
+            color: #8B0000;
+            font-size: 20px;
+            font-weight: 900;
+            margin: 5px 0;
+            font-family: 'white';
+        }
+
+        /* Button */
         .button { 
             background: #b22222;
             color: white;
             padding: 10px 20px;
-            margin-top: 0;
             border: none;
             cursor: pointer;
             border-radius: 5px;
             font-size: 16px;
-            display: block;
-            align-items: center;
-            text-align: center;
-            margin-left: 40px;
+            display: inline-block;
         }
+
         .button:hover { 
             background: #8b0000;
         }
-        .bt{
-            width: 950px;
-            height: 40px;
-            justify-items: center;
+
+        .bt {
+            margin-top: 15px;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                width: 85%;
+                padding: 15px;
+            }
+
+            h1 {
+                font-size: 22px;
+            }
+
+            .middle {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            img {
+                width: 60%;
+            }
+
+            pre {
+                font-size: 18px;
+                text-align: start;
+            }
+
+            .message p {
+                font-size: 18px;
+            }
+
+            .button {
+                font-size: 14px;
+                padding: 10px 18px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                width: 90%;
+            }
+
+            h1 {
+                font-size: 20px;
+            }
+
+            img {
+                width: 70%;
+            }
+
+            pre {
+                font-size: 16px;
+                text-align:start;
+            }
+
+            .message p {
+                font-size: 16px;
+                font-family:'white';
+            }
+
+            .button {
+                font-size: 14px;
+                padding: 8px 16px;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
-            <h1 style="text-align: center;">Elves’ Secret Stash [5K HAMPER]</h1>
-        <img src="photos/elve's.webp" alt="Elves’ Secret Stash">
-        <pre style="display: inline-block; vertical-align: top; margin-top:0; font-family: fantasy; font-size: 19px;text-align:start;">
-            - Jute Basket
-            - Decoration's
-            - Premium Swiss and Champagne chocolates
-            - Assorted Homemade Christmas cookies
-            - Dark Chocolate covered nuts and fruits
-            - Hot Chocolate mix
-            - Christmas stockings (set of 2)
-            - Christmas Mug
-            - Green Apple sparkling juice
-            - Elves’ figurines</pre>
+        <div class="hampername">
+            <h1>Elves’ Secret Stash [5K HAMPER]</h1>
+        </div>
+        <div class="middle">
+            <img src="photos/elve's.webp" alt="Elves’ Secret Stash">
+            <pre>
+                - Jute Basket
+                - Decoration's
+                - Premium Swiss and Champagne chocolates
+                - Assorted Homemade Christmas cookies
+                - Dark Chocolate covered nuts and fruits
+                - Hot Chocolate mix
+                - Christmas stockings (set of 2)
+                - Christmas Mug
+                - Green Apple sparkling juice
+                - Elves’ figurines
+            </pre>
+        </div>
+        <div class="message">
             <p>❝A delightful surprise straight from Santa’s workshop! Packed with festive treats and holiday magic, this hamper is a treasure trove of joy!❞</p>
+        </div>
         <div class="bt">
             <button class="button" onclick="window.location.href='homepage.html'">Back to Home page</button>
         </div>
