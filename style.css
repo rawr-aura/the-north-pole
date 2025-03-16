@@ -1,81 +1,209 @@
 
+
 body {
-    font-family: Arial, sans-serif; 
-    background: linear-gradient(to right,#034A2B,#034A2B);
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #034A2B, #034A2B);
     text-align: center;
     color: #2e1a47;
     margin: 0;
-    }
-.container { 
-    width:100%;
-    height:70px;
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 140px;
-    }
-h1{
-    margin: 0;
+    padding: 0;
 }
 
-    nav{
-        background-color: #D4AF37;;
-        padding: 5px 0px 5px 0px;
-        justify-content: space-between;
-        width: 1440px;
-        margin: 70px 0px 0px 0px;
-    }
 
-    .navbox{
-        color: #680101;
-        font-family: 'Nav';
-        display: inline-block;
-        margin: 5px 170px 5px 170px;
-        align-items: center;
-        text-align: center;
-        font-size: 20px;
-        text-decoration: none;
-    }
-    .navbox:hover{
-        cursor:pointer;
-    }
+.container {
+    max-width: 100%;
+    padding: 10px;
+}
 
-.hamper { 
+h1 {
+    font-family: 'Bilcasereg';
+    color: #D4AF37;
+    font-size: 8vw;
+    text-shadow: 0 0 20px #000000b9;
+    margin: 10px 0;
+}
+
+nav {
+    background-color: #D4AF37;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.navbox {
+    margin:0px 100px ;
+    color: #680101;
+    font-family: 'Nav';
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.navbox:hover {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.title {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.title h3 {
+    font-family: 'Christmas2';
+    font-size: 22px;
+    color: #d70303;
+    margin: 0 15px;
+}
+
+hr {
+    flex: 1;
+    border: 0.7px solid aliceblue;
+    margin: 5px 15px;
+}
+
+
+.hamper-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.hamperbox {
     background-color: #8b0000;
     color: #D4AF37;
     padding: 20px;
-    margin: 0px 50px 0px 50px;
-    width: 320px;
-    height: 320px;
-    vertical-align: top;
+    max-width: 320px;
+    width: 100%;
     border-radius: 10px;
     box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
-    display: inline-block;
+    text-align: center;
     }
-.hamper h2 { 
-    font-size: 20px;
-    color: #D4AF37;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    margin-bottom: 0;
-}
-.hamper img { 
-    width: 180px;
+
+.hamperbox img {
+    width: 100%;
+    max-width: 180px;
     height: auto;
     border-radius: 10px;
-    }
-.button { 
-    background:#D4AF37;;
+}
+
+.hampername h2 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.hamperbt {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.button {
+    background: #D4AF37;
     color: rgb(105, 0, 0);
-    padding: 10px 20px;
-    margin: 20px 10px 0px 10px;
+    padding: 10px 15px;
     border: none;
     cursor: pointer;
     border-radius: 5px;
     font-size: 16px;
     transition: 200ms;
 }
-.button:hover { 
-    background:#fcffa8;
-    padding: 11px 21xpx;
-    margin: 15px -5px 0px 5px;
-    font-size: 20px;
+
+.button:hover {
+    background: #d0d371;
+    font-size: 17px;
+}
+
+/* Responsive Design */
+@media (max-width: 1133px) {
+    nav{
+        padding: 5px;
+    }
+    h1 {
+        font-size: 10vw;
+    }
+    .title h3 {
+        font-size: 15px;
+    }
+    .navbox {
+        font-size: 15px;
+        padding: 8px;
+        margin:0px 50px ;
+    }
+    .hamperbox {
+        max-width: 70%;
+        margin: 10px 0;
+    }
+    .hamper-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 653px) {
+    .title h3 {
+        font-size: 10px;
+    }
+    .navbox {
+        font-size: 10px;
+        padding: 5px;
+        margin:0px 50px ;
+    }
+    
+    .hamperbox {
+        max-width: 60%;
+        margin: 10px 0;
+    }
+    
+    .button {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+}
+@media (max-width: 455px) {
+    .title h3 {
+        font-size: 10px;
+    }
+    .navbox {
+        font-size: 8px;
+        padding: 5px;
+        margin:0px 30px ;
+    }
+    
+    .hamperbox {
+        max-width: 60%;
+        margin: 10px 0;
+    }
+    
+    .button {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+@media (max-width: 200px) {
+    .title h3 {
+        font-size: 10px;
+    }
+    .navbox {
+        font-size: 6px;
+        padding: 5px;
+        margin:0px 5px ;
+    }
+    
+    .hamperbox {
+        max-width: 60%;
+        margin: 10px 0;
+    }
+    
+    .button {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
 }
