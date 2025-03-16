@@ -7,58 +7,89 @@
     <link rel="stylesheet" href="font.css">
     <style>
         html{
-            height: 100%;
             margin: 0;
-        }
-        body{
-            /* background: linear-gradient(45deg, #1B3B6F, #4682B4, #87CEFA, #4682B4, #1B3B6F); */
-            background: linear-gradient(45deg,#B8860B, #D4AF36, #FFD700, #D4AF36, #B8860B);
+            min-height: 95vh;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(45deg, #B8860B, #D4AF36, #FFD700, #D4AF36, #B8860B);
             background-repeat: no-repeat;
+            padding: 20px;
         }
-        p{
-            /* border: 2px solid black; */
+
+        p {
             color: #034A2B;
             font-family: 'Bilcasesha';
-            font-size: 230px;
-            margin: 210px 0px 30px 0px;
+            font-size: 10vw;
+            margin: 30vh 0 2vh 0;
             text-shadow: 3px 3px 2px rgba(255, 255, 255, 0.492);
-            
         }
-        .punch{
-            /* border: 2px solid black; */
-            font-size: 60px;
-            margin: -30px 0px 0px 50px;
+
+        .punch {
+            font-size: 3vw; 
+            margin: -10px 0 20px 0;
             font-family: 'Christmasspi';
             letter-spacing: 3px;
         }
 
-        .bt{
-            /* border: 2px solid black; */
-            align-items: center;
-        }
-        
-        button{
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 20px;
-            font-weight: 1000;
-            letter-spacing: 1px;
+        .bt {
             text-align: center;
-            color: rgb(0, 0, 0);
-            background-color:#ffffff;
-            border:none;
-            border-radius: 6px;
-            padding: 15px 23px 15px 23px;
-            margin: 30px 20px 0px 50px;
-            box-shadow:  2px 2px 2px rgb(0, 0, 0);
         }
-        button:hover{
+
+        button {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.2rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+            color: black;
             background-color: #ffffff;
+            border: none;
+            border-radius: 6px;
+            padding: 15px 23px;
+            margin-top: 20px;
+            box-shadow: 2px 2px 2px rgb(0, 0, 0);
             cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #f8f8f8;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            p {
+                font-size: 12vw; 
+            }
+
+            .punch {
+                font-size: 4vw;
+            }
+
+            button {
+                font-size: 1rem;
+                padding: 12px 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            p {
+                font-size: 14vw; 
+                margin: 10vh 0 2vh 0;
+            }
+
+            .punch {
+                font-size: 5vw;
+                margin-top: -5px;
+            }
+
+            button {
+                font-size: 0.9rem;
+                padding: 10px 18px;
+            }
         }
     </style>
 </head>
 <body>
-    
     <p>The NoRth PoLe</p>
     <p class="punch">-----------Unwrap the Magic of Christmas!</p>
     <div class="bt">
