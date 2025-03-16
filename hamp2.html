@@ -8,23 +8,17 @@
     <style>
         body { 
             font-family: Arial, sans-serif;
-            align-items: center;
             text-align: center;
-            background-color:#8B0000;
+            background-color: #8B0000;
             color: #2e1a47;
-        }
-        p{
-            color: #8B0000;
-            font-family:'white';
-            font-size: 20px;
-            font-weight: 900;
-            margin: -5px 0px 20px 80px;
-            width: 1030px;
+            margin: 0;
+            padding: 0;
         }
         .container { 
             width: 80%;
-            height: 590px;
-            margin:100px 120px 100px 120px;
+            max-width: 1050px;
+            height: 600px;
+            margin: 100px auto;
             padding: 20px;
             background: white;
             border-radius: 10px;
@@ -32,52 +26,116 @@
         }
         h1 { 
             color: #b22222;
-            font-family: 'Pacifico', cursive;
+            font-family: 'Bilcasereg';
+        }
+        .content-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: start;
+            gap: 20px;
+            flex-wrap: wrap; /* Ensures responsiveness */
         }
         img { 
-            width: 380px;;
+            display: flex;
+            width: 380px;
             border-radius: 10px;
-            margin-bottom: 0;
+            flex-shrink: 0;
+        }
+        pre {
+            font-family: fantasy;
+            font-size: 19px;
+            text-align: left;
+            margin: 0;
+            white-space: pre-wrap;
+        }
+        p {
+            color: #8B0000;
+            font-size: 20px;
+            font-weight: 900;
+            width: 90%;
+            margin: 0px auto;
+            font-family: 'white';
         }
         .button { 
             background: #b22222;
             color: white;
             padding: 10px 20px;
-            margin-top: 5px;
             border: none;
             cursor: pointer;
             border-radius: 5px;
             font-size: 16px;
             display: block;
-            align-items: center;
-            text-align: center;
-            margin-left: 500px;
+            margin: 5px auto;
         }
         .button:hover { 
             background: #8b0000;
+        }
+        @media (max-width: 1135px) {
+            .container {
+                height: auto;
+                padding: 30px;
+            }
+            .content-wrapper {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            pre {
+                text-align: center;
+            }
+        }
+        @media (max-width: 440px) {
+            .container {
+                height: auto;
+                padding: 30px;
+            }
+            .content-wrapper img{
+                width: 300px;
+            }
+            .content-wrapper {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            pre {
+                text-align: center;
+            }
+        }
+        @media (max-width: 340px) {
+            .content-wrapper img{
+                width: 280px;
+            }
+        }
+        @media (max-width: 240px) {
+            .content-wrapper img{
+                width: 200px;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1 style="text-align: center;">Mistletoe Mischief [10K HAMPER]</h1>
-        <img src="photos/mistletoe.webp" alt="Elves’ Secret Stash">
-        <pre style="display: inline-block; vertical-align: top; margin-top:0; font-family: fantasy; font-size: 19px;text-align:start;">
-            - Wooden hamper
-            - Decorations
-            - Assorted macaroons
-            - Gourmet cheese platter set
-            - Mini panettone
-            - Mulled wine mix
-            - Custom Christmas coaster (set of 6)
-            - Christmas stockings (set of 3)
-            - Mistletoe snow globe
-            - Fresh Honeycomb
-            - Mistletoe fairy lights
-            - Eggnog (non-alcoholic)
-            - Christmas mistletoe glass jars with Christmas stickers inside</pre>
+        <h1>Mistletoe Mischief [10K HAMPER]</h1>
+        <div class="content-wrapper">
+            <img src="photos/mistletoe.webp" alt="Elves’ Secret Stash">
+            <pre>
+- Wooden hamper
+- Decorations
+- Assorted macaroons
+- Gourmet cheese platter set
+- Mini panettone
+- Mulled wine mix
+- Custom Christmas coaster (set of 6)
+- Christmas stockings (set of 3)
+- Mistletoe snow globe
+- Fresh Honeycomb
+- Mistletoe fairy lights
+- Eggnog (non-alcoholic)
+- Christmas mistletoe glass jars with Christmas stickers inside
+            </pre>
+        </div>
         <p>❝Spread love, laughter, and a little holiday mischief! This premium hamper is filled with heartwarming delights to make your Christmas extra special.❞</p>
-            <button class="button" onclick="window.location.href='homepage.html'">Back to Home page</button>
+        <button class="button" onclick="window.location.href='homepage.html'">Back to Home page</button>
     </div>
 </body>
 </html>
