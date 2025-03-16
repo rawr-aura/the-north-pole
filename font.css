@@ -24,3 +24,15 @@
     font-family: 'white';
     src: url('fonts/WhiteDreamPERSONALUSEONLY-Regular.otf') format('opentype');
 } 
+@font-face {
+    font-family: 'comeback';
+    src: url('fonts/CHRISTMAS\ COMEBACK.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'letter';
+    src: url('fonts/Callifornia\ Signature.ttf') format(truetype);
+}
+@font-face {
+    font-family: 'vintage';
+    src: url('fonts/Perfectly\ Vintages\ Font\ by\ Keithzo.otf') format('opentype');
+}
