@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - The North Pole Co.</title>
+    <link rel="stylesheet" href="font.css">
+    <style>
+        body {
+            background-color: #034a2b;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #901d1d;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 90%;
+            max-width: 800px;
+            height: 640px;
+            background-color: #e4edf6;
+            padding: 10px 20px;
+            border-radius: 10px;
+            box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            margin: 60px auto;
+            overflow: scroll;
+        }
+        h1 {
+            text-shadow: 1px 1px 2px black;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            color: #d4af36;
+            font-size: 70px;
+            margin:0px 0px 10px 0px;
+        }
+        label {
+            font-size: 18px;
+            font-weight: bold;
+            color: #901d1d;
+            display: block;
+            margin-top: 10px;
+            text-align: left;
+        }
+        input, textarea, select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #901d1d;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        textarea {
+            height: 120px;
+        }
+        .btn {
+            background: #b22222;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+            margin-top: 15px;
+            display: block;
+            width: 100%;
+        }
+        .btn:hover {
+            background: #8b0000;
+        }
+        .note {
+            font-size: 14px;
+            color: #680101;
+            font-style: italic;
+            margin-top: 5px;
+        }
+        .contact-info {
+            margin-top: 30px;
+            font-size: 18px;
+            color: #034a2b;
+        }
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+                padding: 20px;
+            }
+            h1 {
+                font-size: 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Contact Us</h1>
+        <p style="font-style: italic;">Have questions or want to customize your hamper? Reach out to us, and we’ll be happy to assist you.</p>
+
+        <form action="submit_contact.php" method="POST">
+            <label for="name">Customer Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="email">Customer Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="hamper">Want custom hampers? Select hamper</label>
+            <select id="hamper" name="hamper">
+                <option value="Elves' Secret Stash">Elves’ Secret Stash (5K)</option>
+                <option value="Mistletoe Mischief">Mistletoe Mischief (10K)</option>
+                <option value="Santa’s Secret Workshop">Santa’s Secret Workshop (15K)</option>
+                <option value="Custom Hamper">Custom Hamper</option>
+            </select>
+
+            <label for="customization">Message</label>
+            <textarea id="customization" name="customization" placeholder="Type your message here for feedback/complains/customization/etc.."></textarea>
+
+            <p class="note">*Note: Prices may vary based on customization.</p>
+
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+
+        <div class="contact-info">
+            <p><strong>Email:</strong> support@thenorthpoleco.com</p>
+            <p><strong>Phone:</strong> +123 456 7890</p>
+        </div>
+    </div>
+
+</body>
+</html>
