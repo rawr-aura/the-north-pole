@@ -8,75 +8,118 @@
     <style>
         body { 
             font-family: Arial, sans-serif;
-            align-items: center;
             text-align: center;
-            background-color:#8B0000;
+            background-color: #8B0000;
             color: #2e1a47;
+            margin: 0;
+            padding: 0;
         }
-        p{
-            color: #8B0000;
-            font-family:'white';
-            font-size: 20px;
-            font-weight: 900;
-            margin: 0px 0px 10px 80px;
-            width: 1030px;
-        }
+
         .container { 
-            width: 1200px;
-            height: 630px;
-            margin:70px 90px 70px 90px;
+            width: 90%;
+            max-width: 1200px;
+            margin: 50px auto;
             padding: 20px;
             background: white;
             border-radius: 10px;
             box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
         }
+
         h1 { 
             color: #b22222;
-            font-family: 'Pacifico', cursive;
+            font-family: 'Bilcasereg';
         }
+
+        pre{
+            font-family: fantasy;
+        }
+
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
         img { 
-            width: 450px;;
+            width: 100%;
+            max-width: 450px;
             border-radius: 10px;
-            margin-bottom: 0;
         }
+
+        .details {
+            font-family: fantasy;
+            font-size: 22px;
+            text-align: start;
+            max-width: 500px;
+        }
+
+        p {
+            font-family: 'white';
+            color: #8B0000;
+            font-size: 18px;
+            font-weight: 900;
+            margin-top: 15px;
+        }
+
         .button { 
             background: #b22222;
             color: white;
             padding: 10px 20px;
-            margin-top: 5px;
             border: none;
             cursor: pointer;
             border-radius: 5px;
             font-size: 16px;
-            display: block;
-            align-items: center;
-            text-align: center;
-            margin-left: 500px;
+            display: inline-block;
+            margin-top: 10px;
         }
+
         .button:hover { 
             background: #8b0000;
+        }
+
+        @media (max-width: 768px) {
+            .content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .details {
+                text-align: center;
+            }
+
+            p {
+                width: auto;
+                margin: 10px;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1 style="text-align: center;">Santa’s Secret Workshop [15K HAMPER]</h1>
-        <img src="photos/santa.webp" alt="Elves’ Secret Stash">
-        <pre style="display: inline-block; vertical-align: top; margin-top:0; font-family: fantasy; font-size: 22px;text-align:start;">
-            - Customised Sleigh shaped hamper 
-            - Ginger bread cookies (Santa, toy, elves, etc.)
-            - Mini candy canes
-            - Truffles (cinnamon and nutmeg)
-            - Christmas Stollen (bread)
-            - Hot cocoa bombs (2 pieces)
-            - Nutcracker themed trail mix
-            - Herbal tea collection (ginger-lemon, apple-cinnamon, peppermint)
-            - Santa's workshop model miniature
-            - Christmas stockings (set of 4)
-            - Prosecco (Italian sparkling wine)
-            - Christmas tree topper (gold)
-            - Cardigans (set of 2)</pre>
-            <p>❝Experience the ultimate Christmas indulgence! A luxurious collection of festive goodies, handpicked by Santa himself for a truly magical holiday.❞</p>
+        <h1>Santa’s Secret Workshop [15K HAMPER]</h1>
+        <div class="content">
+            <img src="photos/santa.webp" alt="Elves’ Secret Stash">
+            <div class="details">
+                <pre>
+- Customised Sleigh shaped hamper 
+- Ginger bread cookies (Santa, toy, elves, etc.)
+- Mini candy canes
+- Truffles (cinnamon and nutmeg)
+- Christmas Stollen (bread)
+- Hot cocoa bombs (2 pieces)
+- Nutcracker themed trail mix
+- Herbal tea collection (ginger-lemon, apple-cinnamon, peppermint)
+- Santa's workshop model miniature
+- Christmas stockings (set of 4)
+- Prosecco (Italian sparkling wine)
+- Christmas tree topper (gold)
+- Cardigans (set of 2)
+                </pre>
+            </div>
+        </div>
+        <p>❝Experience the ultimate Christmas indulgence! A luxurious collection of festive goodies, handpicked by Santa himself for a truly magical holiday.❞</p>
         <button class="button" onclick="window.location.href='homepage.html'">Back to Home page</button>
     </div>
 </body>
