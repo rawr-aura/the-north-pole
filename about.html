@@ -3,70 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>About Our Shop</title>
     <link rel="stylesheet" href="font.css">
     <style>
-    
-        /* #034a2b #d4af36 #8b0000 #680101 */
-        body{
-            background-color:#034a2b;
+        /* Color Palette: #034a2b #d4af36 #8b0000 #680101 */
+        body {
+            background-color: #034a2b;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #901d1d;
+            margin: 0;
+            padding: 0;
         }
-        .box{
-            margin: 60px 100px;
+        .box {
+            width: 90%;
+            max-width: 1200px;
+            height: 590px;
+            margin: 100px auto;
             padding: 20px;
             border-radius: 10px;
-            width: 1200px;
-            height: 650px;
             background-color: #e4edf6;
             overflow: hidden;
+            box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
         }
-        .head{
-            /* border: 2px solid black; */
-            justify-items: center;
-            text-shadow: 1px 1px 4px black;
+        .head {
+            text-align: center;
+            text-shadow: 1px 1px 2px black;
         }
-        .heading{
-            font-family: 'Christmasspi';
-            color:  #d4af36;
-            font-size: 100px;
+        .heading {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            color: #d4af36;
+            font-size: 80px;
             margin: 0;
         }
-        .content{
-            margin: 0px 0px 0px 0px;
-            /* border: 2px solid black; */
-            width: 1156px;
-            height: 400px;
-            padding: 20px;
-            display: inline-block;
+        .content {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            flex-wrap: wrap;
+            padding-top: 30px;
         }
-        .content img{
-            width: 400px;
+        .content img {
+            width: 33%;
+            min-width: 250px;
             border-radius: 10px;
             box-shadow: 2px 2px 5px black;
-            margin: 0px 0px 0px 0px;
         }
-        .matter{
-            /* border: 2px solid black; */
-            display: inline-block;
-            width: 730px;
-            margin: 0px 0px 5px 13px;
-            vertical-align:top;
-            overflow: hidden;
+        .matter {
+            flex: 1;
+            max-width: 65%;
+            height: 48vh;
+            overflow-y: scroll;
+            padding-right: 10px;
         }
-        .text{
-            width: 730px;
-            margin: 0px 0px 0px 0px;
-            vertical-align: top;
+        .matter p {
+            font-family: 'vintage';
+            font-size: 20px;
+            text-align: justify;
         }
-        .bt{
-            /* border: 2px solid black; */
-            margin: 0px 0px 0px 0px;
-            height: 30px;
-            width: 1156px;
+        .text h1, h2 {
+            font-family: 'comeback';
+            font-size: 32px;
+        }
+        strong {
+            text-decoration: underline;
+        }
+        .bt {
+            text-align: center;
             padding: 20px;
-            justify-items: center;
         }
-        button{
+        button {
             background: #b22222;
             color: white;
             padding: 10px 20px;
@@ -74,54 +79,101 @@
             cursor: pointer;
             border-radius: 5px;
             font-size: 16px;
-            display: block;
-            text-align: center;
+        }
+        button:hover {
+            background: #8b0000;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .box {
+                width: 95%;
+                height: auto;
+                padding: 15px;
+            }
+            .heading {
+                font-size: 60px;
+            }
+            .content {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            .content img {
+                width: 70%;
+            }
+            .matter {
+                max-width: 100%;
+                height: 300px;
+                overflow-y: scroll;
+                text-align: center;
+            }
+            .matter p {
+                width: auto;
+            }
+        }
+        @media (max-width: 768px) {
+            .heading {
+                font-size: 50px;
+            }
+            .content img {
+                width: 100%;
+            }
+            .matter {
+                text-align: center;
+                overflow-y: scroll;
+                height: 250px;
+            }
+            .bt {
+                width: 100%;
+            }
         }
     </style>
 </head>
 <body>
-    
     <div class="box">
-        
         <div class="head">
-            <h1 class="heading">About us</h1>
+            <h1 class="heading">About Our Shop</h1>
         </div>
         <div class="content">
             <img src="photos/about.webp" alt="about">
             <div class="matter">
                 <p class="text">
-                    At The North Pole Co., we bring the magic of Christmas to life through our exclusive range of luxury holiday hampers. Each hamper is carefully crafted with high-quality ingredients, festive treats, and handcrafted decorations to make your celebrations even more special.
-
-                    Our Vision 
-                    We believe that gifting should be a heartfelt experience. Our goal is to create hampers that tell a story, evoke nostalgia, and spread joy during the most wonderful time of the year. 
-
-                    Why Choose Us?
-                    1. Premium Quality – Every item in our hampers is handpicked to ensure the best taste, freshness, and festive appeal.
-                    2. Customization & Personalization – We offer tailored options to make every hamper unique for your loved ones.
-                    3. Exclusivity & Value – With limited-edition collections and early bird offers, we bring you the best deals for the holiday season.
-                    4. Sustainable Gifting – We use eco-friendly packaging and support local artisans, making our hampers a responsible gifting choice.
-
-                    Our Hampers
-                    - Elves’ Secret Stash (5K Hamper) – A delightful collection of Swiss chocolates, Christmas cookies, hot chocolate mix, and festive décor.
-
-                    - Mistletoe Mischief (10K Hamper) – A gourmet experience with macaroons, mulled wine mix, cheese platter, and mistletoe fairy lights.
-                    - Santa’s Secret Workshop (15K Hamper) – A luxurious selection featuring gingerbread cookies, Prosecco, herbal teas, hot cocoa bombs, and a miniature Santa’s workshop model.
-
-                    Our Marketing Approach
-                    - Exclusive Offers – Pre-order discounts, limited-time deals, and early bird specials.
-                    - Strategic Partnerships – Collaborations with local markets and pop-up shops for a personal shopping experience.
-                    - Community Engagement – Seasonal workshops, referral programs, and sustainability-focused gifting options.
-
-                    Join the Celebration!
-                    Whether you're looking for the perfect corporate gift, a special treat for family, or a delightful surprise for yourself, The North Pole Co. is here to make your Christmas unforgettable.
-
-                    Let’s spread the festive cheer together! ✨🎄
-                    </p>
+                    <p>At <u>The North Pole Co.</u>, we bring the magic of Christmas to life through our exclusive range of luxury holiday hampers. 
+                    Each hamper is carefully curated with high-quality ingredients, festive treats, and handcrafted decorations to elevate your celebrations.</p>
+                
+                    <h2>OUR VISION</h2>
+                    <p>Gifting should be a heartfelt experience. Our goal is to create hampers that tell a story, evoke nostalgia, and spread joy during the holiday season.</p>
+                
+                    <h2>&#8226; WHY CHOOSE US?</h2>
+                    <ul>
+                        <li><strong>Premium Quality:</strong> Every item is handpicked to ensure superior taste, freshness, and festive appeal.</li>
+                        <li><strong>Customization & Personalization:</strong> Tailored options to make each hamper unique.</li>
+                        <li><strong>Exclusivity & Value:</strong> Limited-edition collections and early bird offers.</li>
+                        <li><strong>Sustainable Gifting:</strong> Eco-friendly packaging and support for local artisans.</li>
+                    </ul>
+                
+                    <h2>&#8226; OUR HAMPERS</h2>
+                    <ul>
+                        <li><strong>Elves’ Secret Stash (5K Hamper):</strong> A delightful collection featuring Swiss chocolates, Christmas cookies, hot chocolate mix, and festive décor.</li>
+                        <li><strong>Mistletoe Mischief (10K Hamper):</strong> A gourmet experience with macaroons, mulled wine mix, a cheese platter, and mistletoe fairy lights.</li>
+                        <li><strong>Santa’s Secret Workshop (15K Hamper):</strong> A luxurious selection including gingerbread cookies, Prosecco, herbal teas, hot cocoa bombs, and a miniature Santa’s workshop model.</li>
+                    </ul>
+                
+                    <h2>&#8226; OUR MARKETING APPROACH</h2>
+                    <ul>
+                        <li><strong>Exclusive Offers:</strong> Pre-order discounts, limited-time deals, and early bird specials.</li>
+                        <li><strong>Strategic Partnerships:</strong> Collaborations with local markets and pop-up shops.</li>
+                        <li><strong>Community Engagement:</strong> Seasonal workshops, referral programs, and sustainability-focused gifting options.</li>
+                    </ul>
+                
+                    <h2>JOIN THE CELEBRATION!</h2>
+                    <p>Whether you are searching for the perfect corporate gift, a thoughtful present for a loved one, or a personal indulgence, The North Pole Co. is dedicated to making your Christmas memorable.</p>
             </div>
         </div>
         <div class="bt">
             <button onclick="window.location.href='homepage.html'">Back to Home Page</button>
         </div>
-</div>
+    </div>
 </body>
 </html>
