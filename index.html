@@ -17,16 +17,17 @@
             padding: 20px;
         }
 
+
         p {
-            color: #034A2B;
+            color: #ffffff;
             font-family: 'Bilcasesha';
-            font-size: 10vw;
-            margin: 30vh 0 2vh 0;
-            text-shadow: 3px 3px 2px rgba(255, 255, 255, 0.492);
+            font-size: 10vw; /* Adjusts with screen width */
+            margin: 25vh 0 2vh 0;
+            text-shadow: 3px 3px 2px rgba(24, 67, 98, 0.492);
         }
 
         .punch {
-            font-size: 3vw; 
+            font-size: 3vw; /* Responsive font */
             margin: -10px 0 20px 0;
             font-family: 'Christmasspi';
             letter-spacing: 3px;
@@ -38,7 +39,7 @@
 
         button {
             font-family: Arial, Helvetica, sans-serif;
-            font-size: 1.2rem;
+            font-size: 1.2rem; /* Scales with screen */
             font-weight: bold;
             letter-spacing: 1px;
             color: black;
@@ -58,7 +59,7 @@
         /* Responsive Design */
         @media (max-width: 768px) {
             p {
-                font-size: 12vw; 
+                font-size: 12vw; /* Adjusts for tablets */
             }
 
             .punch {
@@ -70,10 +71,19 @@
                 padding: 12px 20px;
             }
         }
+        #bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Send it to the background */
+}
 
         @media (max-width: 480px) {
             p {
-                font-size: 14vw; 
+                font-size: 14vw; /* Adjusts for mobile */
                 margin: 10vh 0 2vh 0;
             }
 
@@ -90,8 +100,11 @@
     </style>
 </head>
 <body>
+    <video autoplay muted loop id="bg-video">
+        <source src="videoplayback.mp4" type="video/mp4">
+    </video>
     <p>The NoRth PoLe</p>
-    <p class="punch">-----------Unwrap the Magic of Christmas!</p>
+    <p class="punch">Unwrap the Magic of Christmas!</p>
     <div class="bt">
         <button onclick="window.location.href='homepage.html'">Shop Christmas Hampers</button>
     </div>
