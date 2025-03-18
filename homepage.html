@@ -6,14 +6,96 @@
     <title>Christmas Hampers - The North Pole Co.</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="font.css">
+    <style>
+        .social-media {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            opacity: 50%;
+        }
+        .social-media2{
+            position: absolute;
+            top:10px;
+            right: 23px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .social-media .icons {
+            display: flex;
+            gap: 10px;
+        }
+        .social-media2 .icons{
+            display: flex;
+            gap: 10px;
+        }
+        .social-media img {
+            width: 30px;
+            filter: invert(14%) sepia(93%) saturate(7486%) hue-rotate(359deg) brightness(0%) contrast(105%);
+        }
+        .social-media2 img {
+            width: 30px;
+            filter: invert(14%) sepia(93%) saturate(7486%) hue-rotate(359deg) brightness(60%) contrast(105%);
+        }
+        span {
+            display: block;
+            margin-bottom: 10px;
+            color: #D4AF36;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 900;
+            text-align: center;
+        }
+        .social-media span{
+            color: black;
+        }
+        @media (max-width: 768px) {
+            .social-media {
+                position: relative;
+                top: 0;
+                right: 0px;
+                align-items: center;
+            }
+            .social-media .icons {
+                justify-content: center;
+            }
+            .social-media2 {
+                position: relative;
+                margin-top: -74px;
+                right: 3px;
+                align-items: center;
+            }
+            .social-media2 .icons {
+                justify-content: center;
+            }
+        }
+    </style>
 </head>
 <body> 
+    <div class="social-media">
+        <span>Our socials</span>
+        <div class="icons">
+            <a href="https://www.facebook.com" target="_blank"><img src="facebook (1).png" alt="Facebook"></a>
+            <a href="https://www.instagram.com" target="_blank"><img src="instagram.png" alt="Instagram"></a>
+            <a href="https://www.twitter.com" target="_blank"><img src="twitter-removebg-preview.png" alt="Twitter"></a>
+        </div>
+    </div>
+    <div class="social-media2">
+        <span>Our socials</span>
+        <div class="icons">
+            <a href="https://www.facebook.com" target="_blank"><img src="facebook (1).png" alt="Facebook"></a>
+            <a href="https://www.instagram.com" target="_blank"><img src="instagram.png" alt="Instagram"></a>
+            <a href="https://www.twitter.com" target="_blank"><img src="twitter-removebg-preview.png" alt="Twitter"></a>
+        </div>
+    </div>
     <div class="container">
         <h1>The NoRth PoLe</h1>
     </div>
 
     <nav>
-        <a href="index.html" class="navbox">Home</a>
+        <a href="home.html" class="navbox">Home</a>
         <a href="about.html" class="navbox">About us</a>
         <a href="contact.html" class="navbox">Contact</a>
     </nav>
@@ -59,6 +141,6 @@
         </div>
     </div>
 
-    <marquee behavior="scrool" direction="left">Personalized hampers available. Contact us for customization! </marquee>
+    <marquee behavior="scroll" direction="left">Personalized hampers available. Contact us for customization! </marquee>
 </body>
 </html>
